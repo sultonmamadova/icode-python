@@ -84,3 +84,14 @@ print()
 
 
 print("string ", 1)
+
+
+# var = ("shod" + "mon")
+
+# name = "shod"
+# surname = "ravsh"
+
+# # shod ravsh
+# full_name = name + " " + surname
+# full_name = f"{name} {surname}"
+
