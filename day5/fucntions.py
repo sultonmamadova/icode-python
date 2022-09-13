@@ -32,3 +32,11 @@ plus(2, 2)
 # another action with attrs
 def times(first, second):
     return first * second
+
+
+def ya_vernu_resultat(perviy, vtoroy, tretiy):
+    resultat = f"{perviy} {vtoroy} {tretiy}"
+    return resultat
+
+peremennaya = ya_vernu_resultat(1, 2, 3)
+print(peremennaya)
