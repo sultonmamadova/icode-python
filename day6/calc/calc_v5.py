@@ -23,8 +23,8 @@ def calculator():
     x = int(input("Введите первое число: "))
     y = int(input("Введите второе число: "))
     operation = input("Введите операцию. Доступны +*-/: ")
-    action = get_function(operation=operation)
-    result = action(x, y)
+    function = get_function(operation=operation)
+    result = function(x, y)
     print(f"{x} {operation} {y} = {result}") # 1 + 2 = 3
 
 def main(first=False):
