@@ -30,3 +30,24 @@ forth = [
     "новых предложений",
     "направлений прогрессивного развития",
 ]
+
+# Порядок действий:
+# vvod polzovatelya
+# sozdaem func kotoraya vozvrawaet 1 predlojenie 
+# sozdaem func main v kotoroy while loopom povtoryaetsya sozdanie predlojeniya po koli4estvu vvedennim polzovatelem
+# vivod
+
+# Примерная структура кода
+# import random
+
+# def get_sentence():
+#     return f"{random.choice(first)} ...."
+
+# def main():
+#     # polu4it koli4estvo predlojeniy
+#     # text = ""
+#     while ...:        
+#         # text += # polu4it predlojenie 
+#     # vivod 
+
+# main()
