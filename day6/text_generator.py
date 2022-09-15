@@ -36,14 +36,21 @@ forth = [
 def get_sentence():
     return f"{random.choice(first)} {random.choice(second)} {random.choice(third)} {random.choice(forth)}. "
 
-def main():
-    size = int(input("Сколько предложений создать? "))
+def get_text(size):
     text = ""
     i = 0
+
     while i < size:
         text += get_sentence()
         i += 1
 
+    return text
+
+def main():
+    size = int(input("Сколько предложений создать? "))
+    text = get_text(size)
     print(text)
 
-main()
+
+if __name__ == "__main__":
+    main()
