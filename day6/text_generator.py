@@ -1,3 +1,5 @@
+import random
+
 first = [
     "Товарищи!",
     "C другой стороны",
@@ -31,23 +33,24 @@ forth = [
     "направлений прогрессивного развития",
 ]
 
-# Порядок действий:
-# vvod polzovatelya
-# sozdaem func kotoraya vozvrawaet 1 predlojenie 
-# sozdaem func main v kotoroy while loopom povtoryaetsya sozdanie predlojeniya po koli4estvu vvedennim polzovatelem
-# vivod
+def get_sentence():
+    return f"{random.choice(first)} {random.choice(second)} {random.choice(third)} {random.choice(forth)}. "
 
-# Примерная структура кода
-# import random
+def get_text(size):
+    text = ""
+    i = 0
 
-# def get_sentence():
-#     return f"{random.choice(first)} ...."
+    while i < size:
+        text += get_sentence()
+        i += 1
 
-# def main():
-#     # polu4it koli4estvo predlojeniy
-#     # text = ""
-#     while ...:        
-#         # text += # polu4it predlojenie 
-#     # vivod 
+    return text
 
-# main()
+def main():
+    size = int(input("Сколько предложений создать? "))
+    text = get_text(size)
+    print(text)
+
+
+if __name__ == "__main__":
+    main()
