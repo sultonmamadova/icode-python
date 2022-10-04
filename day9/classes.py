@@ -14,7 +14,7 @@ person.age = 27
 print(person.age)
 
 person.surname = "Ravshanov"
-print(person.age)
+print(person.surname)
 
 
 class Person:
@@ -25,7 +25,7 @@ class Person:
     age = 27
 
     def hello(self):
-        return f"Hi, I'm {name}"
+        return f"Hi, I'm {self.name}"
 
 
 person = Person()
