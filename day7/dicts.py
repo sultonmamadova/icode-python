@@ -22,6 +22,15 @@ print('d["key"] =', d["key"])
 peremennaya = d["key"] # запись значения ключа key в переменную
 print("peremennaya =", peremennaya)
 
+db = [
+    {
+        "brand": "Tesla",
+        "model": "S",
+        "speed": 250,
+    },
+]
+
+db[0]["model"]
 
 # добавление нового ключа в словарь
 car = {
